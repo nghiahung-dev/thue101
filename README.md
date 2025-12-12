@@ -1,43 +1,32 @@
-# Mintlify Starter Kit
+# Thuế Dành Cho Người Dân
 
-Use the starter kit to get your docs deployed and ready to customize.
+Kho tài liệu này tổng hợp và giải thích các kiến thức thuế cơ bản theo cách dễ hiểu, tập trung vào nhu cầu thực tế của người dân (ví dụ: ai phải nộp thuế, các loại thu nhập, cách tính, miễn/giảm, và thủ tục).
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Mục tiêu
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- Giúp người đọc nắm được khái niệm, thuật ngữ và quy trình liên quan đến thuế.
+- Cung cấp hướng dẫn thực hành để tự ước tính/kiểm tra nghĩa vụ thuế.
+- Tổng hợp nội dung theo từng chủ đề để tra cứu nhanh.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## Nội dung trong kho
 
-## Development
+Tài liệu được viết dưới dạng trang hướng dẫn (MDX) và được cấu trúc theo nhóm:
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+- **Kiến thức cơ bản**: giới thiệu, thuế là gì, ai phải nộp, loại thu nhập, cách tính.
+- **Thực hành**: tính thuế, miễn/giảm, thủ tục nộp.
+- **Hỗ trợ**: liên hệ/trao đổi.
 
-```
-npm i -g mint
-```
+Các trang nằm trong thư mục `thue/` và được định tuyến bởi cấu hình `docs.json`.
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+## Cách sử dụng
 
-```
-mint dev
-```
+- Nếu bạn chỉ muốn **đọc nhanh trên GitHub**: mở các file trong thư mục `thue/`.
+- Nếu bạn muốn **xem như một website tài liệu**: xem hướng dẫn phát triển trong phần bên dưới.
 
-View your local preview at `http://localhost:3000`.
+## Đóng góp
 
-## Publishing changes
+Mọi đóng góp (sửa lỗi chính tả, làm rõ nội dung, bổ sung ví dụ) đều được hoan nghênh. Xem hướng dẫn tại [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+## Phát triển tài liệu
 
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Hướng dẫn chạy môi trường xem trước, cấu trúc thư mục, quy ước viết nội dung: xem [docs/development.md](docs/development.md).

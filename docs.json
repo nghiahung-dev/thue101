@@ -22,7 +22,11 @@
       },
       {
         "group": "Thực hành",
-        "pages": ["thue/mien-giam-thue", "thue/thu-tuc-nop-thue"]
+        "pages": [
+          "thue/tinh-thue",
+          "thue/mien-giam-thue",
+          "thue/thu-tuc-nop-thue"
+        ]
       },
       {
         "group": "Hỗ trợ",

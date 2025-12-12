@@ -1,0 +1,136 @@
+---
+title: "Tính Thuế Thu Nhập Cá Nhân"
+description: "Hướng dẫn tính thuế (tương thích Mintlify, không nhúng JavaScript trong MDX)"
+icon: "calculator"
+---
+
+# Tính Thuế Thu Nhập Cá Nhân
+
+Trang này hướng dẫn cách **tự tính nhanh** thuế theo các công thức phổ biến.
+
+<Tip>
+Mintlify không hỗ trợ nhúng JavaScript trực tiếp trong file MDX (ví dụ `<script>`, `<input onChange=...>`). Nếu bạn cần máy tính tương tác “nhập số → ra kết quả”, hãy dùng **custom React component** theo hướng dẫn Mintlify.
+</Tip>
+
+## 🧮 Thuế thu nhập từ lương (lũy tiến từng phần)
+
+<Info>
+  Giảm trừ gia cảnh thường gặp: **11 triệu/tháng** (bản thân) và **4.4
+  triệu/tháng** cho mỗi người phụ thuộc đủ điều kiện.
+</Info>
+
+### 1) Dữ liệu cần có
+
+<Card title="Thu nhập" icon="money">
+  Lương cơ bản: [nhập số] triệu/tháng Phụ cấp/Thưởng: [nhập số] triệu/tháng Tổng
+  thu nhập = lương cơ bản + phụ cấp/thưởng
+</Card>
+
+<Card title="Giảm trừ" icon="users">
+  Bản thân: 11 triệu/tháng Người phụ thuộc: [nhập số] người × 4.4 triệu/tháng
+  (Nếu có) các khoản giảm trừ/bảo hiểm/đóng góp hợp lệ khác: [nhập số]
+</Card>
+
+### 2) Công thức tính
+
+<Card title="Các bước" icon="calculator">
+  Bước 1: Thu nhập tính thuế tháng = Tổng thu nhập − Tổng giảm trừ Bước 2: Nếu ≤
+  0 ⇒ Thuế = 0; nếu > 0 ⇒ tính theo biểu thuế lũy tiến từng phần
+</Card>
+
+| Bậc | Thu nhập tính thuế (triệu/tháng) | Thuế suất |
+| --- | -------------------------------- | --------- |
+| 1   | 0 - 5                            | 5%        |
+| 2   | Trên 5 - 10                      | 10%       |
+| 3   | Trên 10 - 18                     | 15%       |
+| 4   | Trên 18 - 32                     | 20%       |
+| 5   | Trên 32 - 52                     | 25%       |
+| 6   | Trên 52 - 80                     | 30%       |
+| 7   | Trên 80                          | 35%       |
+
+### 3) Ví dụ
+
+<Columns cols={2}>
+  <Card title="Ví dụ 1: Lương 20 triệu, độc thân" icon="user">
+  Tổng thu nhập: 20,000,000  
+  Giảm trừ: 11,000,000  
+  Thu nhập tính thuế: 9,000,000
+
+Tính theo bậc:  
+ 5,000,000 × 5% = 250,000  
+ 4,000,000 × 10% = 400,000  
+ Thuế = 650,000 đồng/tháng
+
+  </Card>
+
+  <Card title="Ví dụ 2: Lương 30 triệu, 2 người phụ thuộc" icon="users">
+  Tổng thu nhập: 30,000,000  
+  Giảm trừ: 11,000,000 + (2 × 4,400,000) = 19,800,000  
+  Thu nhập tính thuế: 10,200,000
+
+Tính theo bậc:  
+ 5,000,000 × 5% = 250,000  
+ 5,000,000 × 10% = 500,000  
+ 200,000 × 15% = 30,000  
+ Thuế = 780,000 đồng/tháng
+
+  </Card>
+</Columns>
+
+## 🏪 Thuế thu nhập từ kinh doanh
+
+<Card title="Cách 1: Tính theo doanh thu" icon="percentage">
+Doanh thu: [nhập số] đồng  
+Thuế = Doanh thu × thuế suất theo ngành
+
+Thuế suất tham khảo: sản xuất/xây dựng 1%, thương mại 1%, dịch vụ 2%, ngành khác 2%.
+
+</Card>
+
+<Card title="Cách 2: Tính theo lợi nhuận (khi có chứng từ)" icon="chart">
+  Lợi nhuận = Doanh thu − Chi phí hợp lý Thuế = Lợi nhuận × 20%
+</Card>
+
+## 🏠 Thuế thu nhập từ cho thuê
+
+<Card title="Cho thuê tài sản" icon="home">
+  Tiền thuê/tháng: [nhập số] đồng Thuế (ước tính nhanh) = Tiền thuê × 5%
+</Card>
+
+## 🔄 Thuế chuyển nhượng bất động sản
+
+<Columns cols={2}>
+  <Card title="Cách 1: Theo giá chuyển nhượng" icon="home-modern">
+  Thuế = Giá chuyển nhượng × 2%
+  </Card>
+
+  <Card title="Cách 2: Theo thu nhập (khi có chứng từ)" icon="calculator">
+  Thu nhập = Giá bán − Giá mua − Chi phí hợp lệ  
+  Thuế = Thu nhập × 20%
+  </Card>
+</Columns>
+
+## 💰 Thuế lãi tiết kiệm
+
+<Card title="Lãi tiết kiệm" icon="piggy-bank">
+  Tổng lãi/năm: [nhập số] đồng Thuế (nếu áp dụng) = Lãi chịu thuế × 5%
+</Card>
+
+## 📌 Liên kết hữu ích
+
+<Card title="Tra cứu & nộp thuế" icon="link">
+  - https://www.gdt.gov.vn - https://thuedientu.gdt.gov.vn
+</Card>
+
+## ⚠️ Lưu ý quan trọng
+
+<Warning>
+  Kết quả chỉ mang tính tham khảo. Quy định có thể thay đổi và có thể có trường
+  hợp ngoại lệ theo hồ sơ thực tế.
+</Warning>
+
+## Căn cứ pháp lý (tham khảo)
+
+- Luật Thuế thu nhập cá nhân số 04/2007/QH12
+- Nghị định 65/2013/NĐ-CP
+- Thông tư hướng dẫn của Bộ Tài chính
