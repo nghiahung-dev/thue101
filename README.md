@@ -21,7 +21,7 @@ Các trang nằm trong thư mục `thue/` và được định tuyến bởi c�
 ## Cách sử dụng
 
 - Nếu bạn chỉ muốn **đọc nhanh trên GitHub**: mở các file trong thư mục `thue/`.
-- Nếu bạn muốn **xem như một website tài liệu**: thue101.nghiahung.dev.
+- Nếu bạn muốn **xem như một website tài liệu**.
 
 ## Đóng góp
 
