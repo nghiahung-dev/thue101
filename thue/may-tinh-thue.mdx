@@ -1,0 +1,29 @@
+---
+title: "Máy tính thuế TNCN"
+description: "Nhập thu nhập và giảm trừ để ước tính thuế thu nhập cá nhân theo tháng"
+icon: "calculator"
+---
+
+import { TaxCalculator } from "/snippets/tax-calculator.jsx";
+
+# Máy tính thuế TNCN
+
+Dùng công cụ bên dưới để **ước tính nhanh thuế TNCN theo tháng** dựa trên thông tin bạn nhập.
+
+<TaxCalculator />
+
+## Giải thích nhanh
+
+- Áp dụng cho **thu nhập từ tiền lương/tiền công** theo **biểu thuế lũy tiến từng phần**.
+- Giảm trừ gia cảnh mặc định trong công cụ:
+  - Bản thân: **11.000.000 đ/tháng**
+  - Người phụ thuộc: **4.400.000 đ/tháng/người**
+
+## Nguồn tham khảo
+
+- https://www.meinvoice.vn/tien-ich/tinh-thue-thu-nhap-ca-nhan/
+
+<Warning>
+  Kết quả chỉ mang tính tham khảo. Quy định và cách tính thực tế có thể khác
+  theo hồ sơ và thời điểm áp dụng.
+</Warning>

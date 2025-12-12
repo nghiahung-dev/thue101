@@ -25,7 +25,7 @@ mint dev
 
 Sau đó mở trình duyệt tại:
 
-- <http://localhost:3000>
+- [http://localhost:3000](http://localhost:3000)
 
 ## Cấu trúc nội dung
 

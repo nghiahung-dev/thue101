@@ -23,6 +23,7 @@
       {
         "group": "Thực hành",
         "pages": [
+          "thue/may-tinh-thue",
           "thue/tinh-thue",
           "thue/mien-giam-thue",
           "thue/thu-tuc-nop-thue"
@@ -45,9 +46,15 @@
       "chatgpt",
       "claude",
       "perplexity",
-      "mcp",
       "cursor",
       "vscode"
     ]
+  },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": "Không tìm thấy trang",
+      "description": "Không rõ _trang_ này đã **xảy ra chuyện gì**?"
+    }
   }
 }
