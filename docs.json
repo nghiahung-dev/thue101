@@ -17,17 +17,15 @@
           "thue/thue-la-gi",
           "thue/ai-phai-nop-thue",
           "thue/loai-thu-nhap",
-          "thue/cach-tinh-thue"
-        ]
-      },
-      {
-        "group": "Thực hành",
-        "pages": [
-          "thue/may-tinh-thue",
+          "thue/cach-tinh-thue",
           "thue/tinh-thue",
           "thue/mien-giam-thue",
           "thue/thu-tuc-nop-thue"
         ]
+      },
+      {
+        "group": "Công cụ tính thuế",
+        "pages": ["thue/may-tinh-thue"]
       },
       {
         "group": "Hỗ trợ",
@@ -55,6 +53,18 @@
       "redirect": false,
       "title": "Không tìm thấy trang",
       "description": "Không rõ _trang_ này đã **xảy ra chuyện gì**?"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "robots": "index, follow",
+      "googlebot": "index, follow",
+      "language": "vi",
+      "og:locale": "vi_VN",
+      "og:image": "/images/hero-light.png",
+      "twitter:card": "summary_large_image",
+      "theme-color": "#16A34A",
+      "application-name": "Thuế Dành Cho Người Dân"
     }
   }
 }
